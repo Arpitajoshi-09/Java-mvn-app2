@@ -1,4 +1,5 @@
 FROM tomcat:latest
-workdir /home/devopsadmin
+WORKDIR /usr/local/tomcat/webapps/
+
 COPY mvn-hello-world.war /usr/local/tomcat/webapps/
 
